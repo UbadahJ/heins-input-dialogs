@@ -94,6 +94,12 @@ public class MainActivity extends AppCompatActivity {
                 lastValueHeinsInputDialog != null
                         ? getString(R.string.last_value, lastValueHeinsInputDialog)
                         : getString(R.string.last_value, ""));
+
+        findViewById(R.id.calculator_input_button).setOnClickListener(this::onClickCalculatorInput);
+        findViewById(R.id.date_input_button).setOnClickListener(this::onClickHeinsDatePickerDialog);
+        findViewById(R.id.input_dialog_double).setOnClickListener(this::onClickHeinsInputDialogDouble);
+        findViewById(R.id.input_dialog_long).setOnClickListener(this::onClickHeinsInputDialogLong);
+        findViewById(R.id.input_dialog_string).setOnClickListener(this::onClickHeinsInputDialogString);
     }
 
     public void onClickCalculatorInput(View view) {

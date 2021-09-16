@@ -40,11 +40,11 @@
                         android:text="@string/last_value" />
 
                     <Button
+                        android:id="@+id/calculator_input_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         style="@style/Base.Widget.AppCompat.Button.Colored"
-                        android:text="@string/show_dialog"
-                        android:onClick="onClickCalculatorInput" />
+                        android:text="@string/show_dialog" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -75,11 +75,11 @@
                         android:text="@string/last_value" />
 
                     <Button
+                        android:id="@+id/date_input_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         style="@style/Base.Widget.AppCompat.Button.Colored"
-                        android:text="@string/show_dialog"
-                        android:onClick="onClickHeinsDatePickerDialog" />
+                        android:text="@string/show_dialog" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -112,28 +112,30 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <Button
-                            android:layout_weight="1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            style="@style/Base.Widget.AppCompat.Button.Colored"
-                            android:text="@string/show_double"
-                            android:onClick="onClickHeinsInputDialogDouble"/>
-                        <Button
-                            android:layout_weight="1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            style="@style/Base.Widget.AppCompat.Button.Colored"
-                            android:text="@string/show_long"
-                            android:onClick="onClickHeinsInputDialogLong"/>
 
                         <Button
+                            android:id="@+id/input_dialog_double"
                             android:layout_weight="1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             style="@style/Base.Widget.AppCompat.Button.Colored"
-                            android:text="@string/show_string"
-                            android:onClick="onClickHeinsInputDialogString" />
+                            android:text="@string/show_double" />
+
+                        <Button
+                            android:id="@+id/input_dialog_long"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:text="@string/show_long" />
+
+                        <Button
+                            android:id="@+id/input_dialog_string"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/Base.Widget.AppCompat.Button.Colored"
+                            android:text="@string/show_string" />
                     </LinearLayout>
 
                 </LinearLayout>
