@@ -31,7 +31,7 @@ Project _build.gradle_:
 allprojects {
     repositories {
         // ... other repositories here
-        maven { url "http://dl.bintray.com/hellmannmaicon/android" }
+        maven { url 'https://jitpack.io' }
     }
 }
 ```
@@ -39,7 +39,7 @@ Module/app _build.gradle_:
 ```
 dependencies {
     // ... other dependencies here
-    compile 'br.com.forusers.heinsinputdialogs:input-dialogs-library:0.1.4'
+    implementation 'com.github.UbadahJ:heins-input-dialogs:0.2.0'
 }
 ```
 
