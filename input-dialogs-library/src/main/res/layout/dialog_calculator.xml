@@ -20,7 +20,7 @@
             android:layout_alignBottom="@+id/calculator_value"
             android:gravity="center"/>
 
-        <android.support.v7.widget.AppCompatEditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:padding="@dimen/calculator_result_padding"
             android:id="@+id/calculator_value"
             android:layout_width="match_parent"

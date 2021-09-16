@@ -1,6 +1,6 @@
 package br.com.forusers.heinsinputdialogs.interfaces;
 
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 
 /**
  * Listener to get input value.
